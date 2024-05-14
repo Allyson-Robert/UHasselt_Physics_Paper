@@ -121,9 +121,7 @@
     \input{Sections/0-ABSTRACT}
     \npar
     \textbf{Keywords:} \thekeywords\newline
-	\small $^{\dagger}$\textit{Corresponding author.} 
-	\textit{Tel: \color{cyan}{\thepitel}}; 
-	\textit{E-mail address: \color{cyan}{\thepimail} }
+	\small $^{\dagger}$\textit{Corresponding author: \color{cyan}{\thepimail} }
     \npar
     \rule[1.5ex]{\linewidth}{0.4pt}
     \vspace{5mm}
