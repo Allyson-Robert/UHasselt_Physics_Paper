@@ -97,6 +97,9 @@
 % Add the bibliography to the document
 \addbibresource{references.bib}
 
+% Ragged bottom makes sure paragraph separation doesn't get overstretched
+\raggedbottom
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %       Title Header       %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -119,6 +122,9 @@
 	\textit{Tel: \color{cyan}{\thepitel}}; 
 	\textit{E-mail address: \color{cyan}{\thepimail} }
 	\npar
+    \textbf{Abstract:}
+    \input{Sections/0-ABSTRACT}
+    \npar
     \rule[1.5ex]{\linewidth}{0.4pt}
     \vspace{5mm}
 }

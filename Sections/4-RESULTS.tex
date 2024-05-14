@@ -6,7 +6,8 @@ Zorg dat figuren een caption hebben (incl. alle afkortingen) onder de figuur en 
 Tabellen krijgen een caption bovenaan (zelfde principe).
 
 Willen jullie resultaten tonen zoals figuren dan dienen jullie de \textit{figure} environment gebruiken.
-\begin{figure}
+
+\begin{figure}[!htpb]
     \centering
     \includegraphics[width=\linewidth]{Figures/newplot(4).png}
     \caption{Dit is het onderschrift van deze figuur}
@@ -14,13 +15,16 @@ Willen jullie resultaten tonen zoals figuren dan dienen jullie de \textit{figure
 \end{figure}
 
 Je kan naar een figuur refereren met \lstinline!\cref{fig:pikachu}! door een label te plaatsen in je figure environment: \lstinline!\label{fig:pikachu}!.
+Ook andere objecten kunnen een label hebben, zo kan ik bijvoorbeeld verwijzen naar \cref{eq:ne}.
 \Cref{fig:p1,fig:p2} toont hoe eventueel gebruik gemaakt kan worden van \textit{minipage} voor twee zij-aan-zij figuren.
-\begin{figure*}[!htpb]
+
+\begin{figure*}
     \centering
     \includegraphics[width=\textwidth]{Figures/Enderby_Island_Rabbit_Lineup.jpg}
     \caption{Dit is een veel te grote figuur. Konijnen zijn belangrijk en moeten de hele pagina innemen.}
     \label{fig:konijnen}
 \end{figure*}
+Grote figuren kunnen verspreid worden over de twee kolommen door gebruik van \lstinline!\begin{figure*}! zoals in \cref{fig:konijnen}. 
 
 \begin{figure*}
     \centering
@@ -40,7 +44,8 @@ Je kan naar een figuur refereren met \lstinline!\cref{fig:pikachu}! door een lab
 Tabellen moeten in de \textit{table} environment geplaatst worden.
 Ook hier is de 'H' parameter cruciaal.
 Gebruik \url{https://www.tablesgenerator.com/} voor hulp bij de opmaak van tabellen.
-\begin{table}[H]
+
+\begin{table}[!htpb]
 \centering
     \label{tab:example_table}
     \caption{Example table with no meaning}

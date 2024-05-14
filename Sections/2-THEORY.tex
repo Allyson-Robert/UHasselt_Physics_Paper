@@ -3,13 +3,18 @@
 Tussentitels zijn aangeraden per onderdeel (2.1, 2.2, \dots).
 Zijn er essentiele stukken theorie die noodzakelijk zijn om je verslag te begrijpen?
 
-Vergelijkingen doe je typisch met de align environment.
+Vergelijkingen doe je typisch met de \textit{align} environment.
 Dit laat je toe om \& (en \&\&) te gebruiken om alles mooi uit te lijnen.
+Wil je midden in een regel een vergelijking gebruiken doe het dan als volgt: $S = k\ln(W)$.
+
     \begin{align}
     x \times x   &= (x \times x) + 0  &&\textit{ Neutr. El. }+\\
             &= (x \times x) + (x \times \neg x) && \textit{ Compl. }\times \\
             &= x + (x \times \neg x) && \textit{ Distr. }+ \\
             &= x + 0 && \textit{ Compl. }\times\\
-            &= x && \textit{ Neutr. El. }+
+            &= x && \textit{ Neutr. El. }+ \label{eq:ne}
     \end{align}
-Wil je midden in een regel een vergelijking gebruiken doe het dan als volgt: $S = k\ln(W)$
+
+Zorg steeds voor een witregel voor en na een environment wanneer je deze gebruikt. 
+Deze witregels zorgen ervoor dat ze beschouwd worden als paragraaf op zich en zo kan \LaTeX de juiste spati\"ering voorzien.
+Bovendien blijft je bestand op deze manier ook beter leesbaar.
